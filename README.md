@@ -15,3 +15,6 @@ HumanAid offers the following features:
  - Easily share the exact location of the incident. Also show the route from the responder in the google map.
  - Easily share the photo of the incident
  - Get reward point for every successful quick reporting.
+
+Known Bug:
+ - As the location is collected by getLastLocation(), sometimes there may not be a cached location available. This returns null location object. To workaround, open Google Maps Android Application, get current location, then collect location from the HumanAid app.

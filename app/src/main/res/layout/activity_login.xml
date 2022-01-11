@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/app_icon"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="Mobile Number"
+            android:textAlignment="viewStart"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="+8801"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/login_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:maxLength="9"
+                android:textColorHint="#A5A493"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:text="PIN"
+            android:textAlignment="viewStart"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/login_PIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:hint="Enter 6 Digit PIN"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColorHint="#A5A493"
+            android:textSize="18sp" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/login_userMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="10sp"
+            android:text="Fire Service Personnel"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="70sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="10sp"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:text="New to HumanAid?"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="10sp"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>

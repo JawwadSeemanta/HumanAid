@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HumanAid</string>
+
+    <string-array name="Type_of_Help_Needed">
+        <item> Fire_Accident </item>
+        <item> Road_Accident </item>
+        <item> Naval_Accident </item>
+        <item> Human_Rescue </item>
+    </string-array>
+</resources>
